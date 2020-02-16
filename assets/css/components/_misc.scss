@@ -1,0 +1,39 @@
+// Misc
+
+.hyde.waldo-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0;
+
+    img {
+        max-width: 200px;
+        margin: 2rem auto;
+    }
+}
+
+.hyde.separator {
+    margin: 0 0.5rem;
+}
+
+.utterances {
+    max-width: none;
+}
+
+hr {
+    height: 1px;
+    background-color: $gray400;
+    border: none;
+}
+
+.hyde.share {
+    display: flex;
+    justify-content: flex-end;
+
+    .hyde.share-item {
+        margin: 0 0.25rem;
+        color: $gray200;
+        cursor: pointer;
+    }
+}

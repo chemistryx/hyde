@@ -1,0 +1,129 @@
+// Navbar
+
+.hyde.navbar-parent {
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &.hyde.navbar-bg {
+        background-color: white;
+        box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.7);
+
+        .hyde.nav-toggler {
+            color: $black !important;
+        }
+
+        .hyde.nav-item {
+            &:before,
+            &:after {
+                background-color: $black !important;
+            }
+
+            &:hover,
+            &.active {
+                a {
+                    color: white !important;
+                }
+            }
+
+            a {
+                color: $black !important;
+            }
+        }
+    }
+
+    .hyde.navbar {
+        list-style: none;
+        display: flex;
+        padding: 48px 0;
+        margin: 0;
+
+        .hyde.nav-toggler {
+            color: white;
+            font-size: 1.25rem;
+            display: none;
+
+            @media (max-width: $tablet) {
+                display: block;
+            }
+        }
+
+        #toggler {
+            display: none;
+        }
+
+        .hyde.nav-item {
+            font-weight: 900;
+            text-transform: uppercase;
+            display: flex;
+            position: relative;
+            z-index: 1;
+            align-items: center;
+            padding: 0 10px;
+            margin: 0 10px;
+
+            &:first-child {
+                margin: 0 auto 0 0;
+                padding: 0;
+
+                @media (max-width: $tablet) {
+                    font-size: 1.25rem;
+                }
+
+                a {
+                    padding: 0;
+                }
+            }
+
+            &:not(:first-child) {
+                @media (max-width: $tablet) {
+                    display: none;
+                }
+            }
+
+            &:before {
+                content: " ";
+                position: absolute;
+                height: 60%;
+                width: 0;
+                background-color: white;
+                left: 0;
+                z-index: -1;
+                top: -3px;
+                transition: width 0.4s ease;
+                border-radius: 3px 3px 0 0;
+            }
+
+            &:after {
+                content: " ";
+                position: absolute;
+                height: 60%;
+                width: 0;
+                background-color: white;
+                left: 0;
+                z-index: -1;
+                bottom: 0;
+                transition: width 0.5s ease;
+                border-radius: 0 0 3px 3px;
+            }
+
+            &:hover::before,
+            &:hover::after,
+            &.active::before,
+            &.active::after {
+                width: 100%;
+            }
+
+            &:hover,
+            &.active {
+                a {
+                    color: $black;
+                }
+            }
+
+            a {
+                color: white;
+                padding: 0 5px;
+                transition: color 0.5s ease;
+            }
+        }
+    }
+}

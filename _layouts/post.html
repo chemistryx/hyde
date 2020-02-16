@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="hyde content">
+    {{ content }} 
+    {% assign author = site.data.authors | where: 'name', page.author | first %} {% if author %}
+    <div class="hyde share">
+        <a class="hyde share-item copy" data-clipboard-text="{{ site.url }}{{ page.url }}"><i class="fas fa-link"></i></a>
+        <a class="hyde share-item" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url}}{{ page.url }}" target="_blank"><i class="fab fa-twitter"></i></i></a>
+        <a class="hyde share-item" href="https://facebook.com/sharer.php?u={{ site.url}}{{ page.url }}" target="_blank"><i class="fab fa-facebook-square"></i></i></a>
+    </div>
+    <div class="hyde signature">
+        {% if author.image %}
+        <img src="{{ author.image }}" />
+        {% endif %}
+        <div class="hyde signature-text">
+            <div class="hyde signature-author">Written by <span>{% if author.name %}{{ author.name }}{% else %}unknown{% endif %}</span></div>
+            <div class="hyde signature-contact"><a href="mailto:{{ author.mail }}">{{ author.email }}</a></div>
+        </div>
+    </div>
+    {% endif %} {% if site.comment.enabled %}
+    <div class="hyde comment">
+        <hr />
+        <h2>댓글</h2>
+        {% include comment.html %}
+    </div>
+    {% endif %}
+    <script>
+        var clipboard = new ClipboardJS('.hyde.share-item.copy');
+
+        clipboard.on('success', function() {
+            alert("클립보드에 복사되었습니다.");
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e)
+        });
+    </script>
+</div>

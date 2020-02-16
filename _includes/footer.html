@@ -1,0 +1,25 @@
+<footer class="hyde footer">
+    <div class="hyde container">
+        <div class="hyde float-left">
+            <ul class="hyde footer-menu links">
+                {% assign pages = site.pages | sort:'url' %} {% for p in pages %} {% if p.visible == true %}
+                <li>
+                    <a href="{{ p.url }}">{{ p.title }}</a>
+                </li>
+                {% endif %} {% endfor %}
+            </ul>
+            <p class="text">&copy; {{ site.time | date: '%Y' }} ChemistryX</p>
+        </div>
+        <div class="hyde float-right">
+            <ul class="hyde footer-menu social">
+                <li>
+                    <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:{{ site.email }}" target="_blank"><i class="fas fa-envelope"></i></a>
+                </li>
+            </ul>
+            <p class="text">Made with <i class="fas fa-heart"></i> by ChemistryX</p>
+        </div>
+    </div>
+</footer>
