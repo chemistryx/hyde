@@ -4,7 +4,7 @@
             <ul class="hyde navbar">
                 {% assign pages = site.pages | sort:'url' %}
                 <li class="hyde nav-item">
-                    <a class="hyde nav-logo" href="{{ '/' | prepend: site.baseurl }}">ChemistryX</a>
+                    <a class="hyde nav-logo" href="/">ChemistryX</a>
                 </li>
                 {% for p in pages %} {% if p.visible == true %} {% assign url = page.url | split: '/' %}
                 <li class="hyde nav-item{% if p.url contains url[1] %} active {% endif %}">
