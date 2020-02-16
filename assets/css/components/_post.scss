@@ -6,6 +6,10 @@
         padding: 4rem 0;
         line-height: 1.4;
 
+        &.divider {
+            border-bottom: 1px solid $gray400;
+        }
+
         .hyde.post-info {
             display: flex;
             align-items: center;

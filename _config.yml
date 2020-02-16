@@ -11,7 +11,7 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 
 comment:
     enabled: true
-    repo: ChemistryX/hyde-utterances
+    repo: ChemistryX/hyde-comments
     issue-term: pathname
     theme: github-light
 

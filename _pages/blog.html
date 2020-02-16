@@ -7,7 +7,7 @@ visible: true
 
 <div class="hyde posts">
     {% for post in site.posts %}
-    <div class="hyde post">
+    <div class="hyde post{% unless forloop.last %} divider {% endunless %}">
         <div class="hyde post-info">
             {% assign author = site.data.authors | where: 'name', post.author | first %} {% if author.image %}
             <img src="{{ author.image }}" />
@@ -21,6 +21,12 @@ visible: true
         <div class="hyde post-trail">
             <span class="hyde post-date">{{ post.date | date: '%Y년 %-m월 %-d일' }}</span>
         </div>
+    </div>
+    {% else %}
+    <div class="hyde empty">
+        <img src="/assets/images/404.png" />
+
+        <p>게시물이 없습니다.</p>
     </div>
     {% endfor %}
 </div>
