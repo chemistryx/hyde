@@ -2,18 +2,23 @@
 
 .hyde.posts {
   font-family: "Noto Sans Korean", sans-serif;
+
   .hyde.post {
     padding: 4rem 0;
     line-height: 1.4;
+
+    @media (max-width: $small) {
+      padding: 2rem 0;
+    }
 
     &.divider {
       border-bottom: 1px solid $gray400;
     }
 
-    .hyde.post-info {
+    .hyde.post-author-wrapper {
       display: flex;
       align-items: center;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
 
       img {
         width: 2.5rem;
@@ -21,12 +26,21 @@
         display: block;
         border-radius: 2rem;
         margin-right: 0.75rem;
+
+        @media (max-width: $small) {
+          width: 2.25rem;
+          height: 2.25rem;
+        }
       }
 
       .hyde.post-author {
         font-size: 0.875rem;
         font-weight: 500;
         color: $black;
+
+        @media (max-width: $small) {
+          font-size: 0.75rem;
+        }
       }
     }
 
@@ -37,12 +51,18 @@
     }
 
     .hyde.post-preview {
-      margin: 0.5rem 0 1rem 0;
+      margin: 0.75rem 0;
+
+      @media (max-width: $small) {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+      }
     }
 
     .hyde.post-trail {
       display: flex;
       align-items: center;
+      margin-top: 0.5rem;
       font-size: 0.875em;
       color: $gray;
 

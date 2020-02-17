@@ -3,7 +3,7 @@
     <h1>{{ page.title }}</h1>
     {% unless page.layout == "post" %}
     <h2>{{ page.description }}</h2>
-    {% else %} {% assign author = site.data.authors | where: 'name', page.author | first %}
+    {% else %} {% assign author = site.data.authors | where: 'name', page.author | first %} {% include tags.html %}
     <div class="hyde post-desc">
       <div class="hyde post-info">
         {% if author.image %}

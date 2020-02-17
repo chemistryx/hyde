@@ -33,12 +33,15 @@ a {
 
 .hyde.content {
   margin: 4rem auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Korean", "Malgun Gothic", "맑은 고딕",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Korean", "Malgun Gothic", "맑은 고딕", sans-serif;
   font-size: 1.15rem;
   line-height: 1.75;
   letter-spacing: -0.02rem;
   color: $black;
+
+  @media (max-width: $small) {
+    font-size: 1.05rem;
+  }
 
   img {
     display: block;

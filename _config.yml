@@ -1,7 +1,7 @@
 title: ChemistryX
 description: >-
-    UI & UX Designer
-    Frontend Developer
+  UI & UX Designer
+  Frontend Developer
 url: "https://staging.chemistryx.me"
 github: ChemistryX
 email: starpiung@naver.com
@@ -10,18 +10,18 @@ include: ["_pages"]
 exclude: [README.md, Gemfile, Gemfile.lock]
 
 comment:
-    enabled: true
-    repo: ChemistryX/hyde-comments
-    issue-term: pathname
-    theme: github-light
+  enabled: true
+  repo: ChemistryX/hyde-comments
+  issue-term: pathname
+  theme: github-light
 
 defaults:
-    - scope:
-          type: pages
-      values:
-          layout: default
-    - scope:
-          type: posts
-      values:
-          layout: post
-          permalink: /blog/:title
+  - scope:
+      type: pages
+    values:
+      layout: default
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:title

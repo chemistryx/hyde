@@ -4,21 +4,15 @@
   margin: 0 auto;
   width: 60%;
 
-  @media (max-width: $laptop) {
+  @media (max-width: $large) {
     width: 75%;
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: $medium) {
+    width: 82.5%;
+  }
+
+  @media (max-width: $small) {
     width: 90%;
   }
-}
-
-.hyde.float-left {
-  float: left;
-  text-align: left;
-}
-
-.hyde.float-right {
-  float: right;
-  text-align: right;
 }

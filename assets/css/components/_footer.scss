@@ -1,74 +1,91 @@
 // Footer
 
-.hyde.footer {
+.hyde.footer-wrapper {
   color: white;
   background: linear-gradient(45deg, $black 45%, $black200 100%);
-  padding: 64px 0;
-  display: flex;
-  justify-content: space-between;
+  padding: 4rem 0;
 
-  .hyde.footer-menu {
-    padding: 0;
+  .hyde.footer {
+    display: flex;
+    justify-content: space-between;
 
-    li {
-      display: inline-block;
-      list-style: none;
+    .hyde.footer-left {
+      text-align: left;
+    }
 
-      a {
-        color: white;
-        text-transform: uppercase;
-        font-weight: 900;
+    .hyde.footer-right {
+      text-align: right;
+      place-self: flex-end;
+    }
+
+    .hyde.footer-menu {
+      padding: 0;
+
+      li {
+        display: inline-block;
+        list-style: none;
+
+        a {
+          color: white;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+      }
+
+      &.links {
+        li {
+          margin: 0 1rem 0.5rem 0;
+
+          a {
+            font-size: 0.9rem;
+            transition: color 0.5s ease;
+
+            &:hover {
+              color: $gray;
+            }
+          }
+        }
+      }
+
+      &.social {
+        a {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          background-color: $black300;
+          border-radius: 3px;
+          line-height: 38px;
+          margin-left: 14px;
+          text-align: center;
+          font-size: 18px;
+          transition: color 0.5s ease, background-color 0.5s ease;
+
+          &:hover {
+            color: $black;
+            background-color: white;
+          }
+        }
       }
     }
-  }
 
-  .hyde.links {
-    a {
-      font-size: 0.9rem;
-      margin-right: 14px;
-      transition: color 0.5s ease;
+    .text {
+      font-size: 0.75rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      color: $gray;
 
-      &:hover {
-        color: $gray;
+      @media (max-width: $small) {
+        font-size: 0.7rem;
       }
-    }
-  }
 
-  .hyde.social {
-    // calculated value
-    margin-top: 7px;
-    a {
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      background-color: $black300;
-      border-radius: 3px;
-      line-height: 38px;
-      margin-left: 14px;
-      text-align: center;
-      font-size: 18px;
-      transition: color 0.5s ease, background-color 0.5s ease;
+      .fa-heart {
+        transition: color 0.5s ease;
 
-      &:hover {
-        color: $black;
-        background-color: white;
+        &:hover {
+          color: $red;
+        }
       }
-    }
-  }
-
-  .text {
-    font-size: 0.75rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    color: $gray;
-  }
-
-  .fa-heart {
-    transition: color 0.5s ease;
-
-    &:hover {
-      color: $red;
     }
   }
 }

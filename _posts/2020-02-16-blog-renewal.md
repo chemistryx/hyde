@@ -1,6 +1,6 @@
 ---
 title: 블로그 개편
-tags: [jekyll]
+tags: [Jekyll, Github Pages]
 author: 케미스트리
 ---
 

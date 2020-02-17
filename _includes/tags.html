@@ -1,0 +1,5 @@
+<div class="hyde tags{% unless post %} header-tags{% endunless %}">
+  {% if post %} {% assign tags = post.tags %} {% else %} {% assign tags = page.tags %} {% endif %} {% for tag in tags %}
+  <a class="hyde tag" href="/tags/{{ tag | slugify }}">{{ tag }}</a>
+  {% endfor %}
+</div>

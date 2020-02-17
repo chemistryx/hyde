@@ -8,7 +8,9 @@
     box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.7);
 
     .hyde.nav-toggler {
-      color: $black !important;
+      a {
+        color: $black !important;
+      }
     }
 
     .hyde.nav-item {
@@ -33,21 +35,26 @@
   .hyde.navbar {
     list-style: none;
     display: flex;
-    padding: 48px 0;
+    padding: 3rem 0;
     margin: 0;
 
     .hyde.nav-toggler {
-      color: white;
-      font-size: 1.25rem;
+      font-size: 1.75rem;
       display: none;
 
-      @media (max-width: $tablet) {
+      a {
+        color: white;
+        cursor: pointer;
+        transition: color 0.5s ease;
+
+        &:hover {
+          color: $gray300;
+        }
+      }
+
+      @media (max-width: $medium) {
         display: block;
       }
-    }
-
-    #toggler {
-      display: none;
     }
 
     .hyde.nav-item {
@@ -62,8 +69,10 @@
 
       &:first-child {
         margin: 0 auto 0 0;
+        padding: 0;
 
-        @media (max-width: $tablet) {
+        @media (max-width: $medium) {
+          padding: 0;
           font-size: 1.25rem;
         }
 
@@ -73,7 +82,7 @@
       }
 
       &:not(:first-child) {
-        @media (max-width: $tablet) {
+        @media (max-width: $medium) {
           display: none;
         }
       }
@@ -104,15 +113,15 @@
         border-radius: 0 0 3px 3px;
       }
 
-      &:hover::before,
-      &:hover::after,
-      &.active::before,
-      &.active::after {
+      &:not(:first-child):hover::before,
+      &:not(:first-child):hover::after,
+      &:not(:first-child).active::before,
+      &:not(:first-child).active::after {
         width: 100%;
       }
 
-      &:hover,
-      &.active {
+      &:not(:first-child):hover,
+      &:not(:first-child).active {
         a {
           color: $black;
         }
@@ -122,6 +131,60 @@
         color: white;
         padding: 0 5px;
         transition: color 0.5s ease;
+      }
+    }
+  }
+
+  .hyde.mobile-nav-wrapper {
+    background: linear-gradient(45deg, $black 45%, $black200 100%);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: none;
+    z-index: 999;
+
+    .hyde.mobile-nav {
+      margin: 0;
+      padding: 3rem 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      .hyde.mobile-nav-row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+
+        .logo {
+          padding: 0;
+          margin-top: 5px;
+        }
+
+        .close-btn {
+          padding: 0;
+          font-size: 2rem;
+          cursor: pointer;
+
+          &:hover {
+            color: $gray300;
+          }
+        }
+      }
+
+      .hyde.mobile-nav-item {
+        font-size: 1.25rem;
+        padding: 2rem 1rem;
+        color: white;
+        border-radius: 3px;
+        transition: color 0.5s ease, background-color 0.5s ease;
+
+        &:not(.close-btn):hover,
+        &:not(.close-btn).active {
+          background-color: white;
+          color: $black;
+        }
       }
     }
   }

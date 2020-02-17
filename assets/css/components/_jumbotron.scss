@@ -9,6 +9,10 @@
     font-size: 3rem;
     margin: 6rem 0 0 0;
     animation: fade-slide-up 0.5s both;
+
+    @media (max-width: $small) {
+      font-size: 2.5rem;
+    }
   }
 
   h2 {
@@ -26,11 +30,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-family: "Noto Sans Korean", sans-serif;
     font-size: 0.875rem;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $small) {
       font-size: 0.75rem;
     }
 
