@@ -1,54 +1,54 @@
 // Post
 
 .hyde.posts {
-    font-family: "Noto Sans Korean", sans-serif;
-    .hyde.post {
-        padding: 4rem 0;
-        line-height: 1.4;
+  font-family: "Noto Sans Korean", sans-serif;
+  .hyde.post {
+    padding: 4rem 0;
+    line-height: 1.4;
 
-        &.divider {
-            border-bottom: 1px solid $gray400;
-        }
-
-        .hyde.post-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-
-            img {
-                width: 2.5rem;
-                height: 2.5rem;
-                display: block;
-                border-radius: 2rem;
-                margin-right: 0.75rem;
-            }
-
-            .hyde.post-author {
-                font-size: 0.875rem;
-                font-weight: 500;
-                color: $black;
-            }
-        }
-
-        .hyde.post-title {
-            font-size: 1.5rem;
-            color: $black;
-            margin: 0;
-        }
-
-        .hyde.post-preview {
-            margin: 0.5rem 0 1rem 0;
-        }
-
-        .hyde.post-trail {
-            display: flex;
-            align-items: center;
-            font-size: 0.875em;
-            color: $gray;
-
-            .hyde.post-date {
-                font-weight: 450;
-            }
-        }
+    &.divider {
+      border-bottom: 1px solid $gray400;
     }
+
+    .hyde.post-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+        border-radius: 2rem;
+        margin-right: 0.75rem;
+      }
+
+      .hyde.post-author {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $black;
+      }
+    }
+
+    .hyde.post-title {
+      font-size: 1.5rem;
+      color: $black;
+      margin: 0;
+    }
+
+    .hyde.post-preview {
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .hyde.post-trail {
+      display: flex;
+      align-items: center;
+      font-size: 0.875em;
+      color: $gray;
+
+      .hyde.post-date {
+        font-weight: 450;
+      }
+    }
+  }
 }

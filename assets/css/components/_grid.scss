@@ -1,24 +1,24 @@
 // Grid
 
 .hyde.container {
-    margin: 0 auto;
-    width: 60%;
+  margin: 0 auto;
+  width: 60%;
 
-    @media (max-width: $laptop) {
-        width: 75%;
-    }
+  @media (max-width: $laptop) {
+    width: 75%;
+  }
 
-    @media (max-width: $tablet) {
-        width: 90%;
-    }
+  @media (max-width: $tablet) {
+    width: 90%;
+  }
 }
 
 .hyde.float-left {
-    float: left;
-    text-align: left;
+  float: left;
+  text-align: left;
 }
 
 .hyde.float-right {
-    float: right;
-    text-align: right;
+  float: right;
+  text-align: right;
 }

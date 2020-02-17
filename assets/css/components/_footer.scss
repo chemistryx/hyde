@@ -1,0 +1,74 @@
+// Footer
+
+.hyde.footer {
+  color: white;
+  background: linear-gradient(45deg, $black 45%, $black200 100%);
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .hyde.footer-menu {
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+
+      a {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .hyde.links {
+    a {
+      font-size: 0.9rem;
+      margin-right: 14px;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+
+  .hyde.social {
+    // calculated value
+    margin-top: 7px;
+    a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background-color: $black300;
+      border-radius: 3px;
+      line-height: 38px;
+      margin-left: 14px;
+      text-align: center;
+      font-size: 18px;
+      transition: color 0.5s ease, background-color 0.5s ease;
+
+      &:hover {
+        color: $black;
+        background-color: white;
+      }
+    }
+  }
+
+  .text {
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: $gray;
+  }
+
+  .fa-heart {
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}

@@ -1,21 +1,21 @@
 <header class="hyde header">
-    <nav class="hyde navbar-parent">
-        <div class="hyde container">
-            <ul class="hyde navbar">
-                {% assign pages = site.pages | sort:'url' %}
-                <li class="hyde nav-item">
-                    <a class="hyde nav-logo" href="/">ChemistryX</a>
-                </li>
-                {% for p in pages %} {% if p.visible == true %} {% assign url = page.url | split: '/' %}
-                <li class="hyde nav-item{% if p.url contains url[1] %} active {% endif %}">
-                    <a href="{{ p.url }}">{{ p.title }}</a>
-                </li>
-                {% endif %} {% endfor %}
-                <input type="checkbox" id="toggler" />
-                <label for="toggler" class="hyde nav-toggler">
-                    <i class="fas fa-bars"></i>
-                </label>
-            </ul>
-        </div>
-    </nav>
+  <nav class="hyde navbar-parent">
+    <div class="hyde container">
+      <ul class="hyde navbar">
+        {% assign pages = site.pages | sort:'url' %}
+        <li class="hyde nav-item">
+          <a class="hyde nav-logo" href="/">ChemistryX</a>
+        </li>
+        {% for p in pages %} {% if p.visible == true %} {% assign url = page.url | split: '/' %}
+        <li class="hyde nav-item{% if p.url contains url[1] %} active {% endif %}">
+          <a href="{{ p.url }}">{{ p.title }}</a>
+        </li>
+        {% endif %} {% endfor %}
+        <input type="checkbox" id="toggler" />
+        <label for="toggler" class="hyde nav-toggler">
+          <i class="fas fa-bars"></i>
+        </label>
+      </ul>
+    </div>
+  </nav>
 </header>

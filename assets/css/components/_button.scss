@@ -1,0 +1,39 @@
+// Button
+
+.hyde.btn {
+  border-radius: 3px;
+  padding: 1rem 1.25rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.1px;
+  transition: background-color 0.5s ease;
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.hyde.btn-blue {
+  color: $blue;
+  border: 1px solid $blue;
+
+  &:hover {
+    color: white;
+    background-color: $blue;
+  }
+}
+
+.hyde.btn-default {
+  color: white;
+  border: 1px solid white;
+
+  &:hover {
+    color: $black;
+    background-color: white;
+  }
+}
+
+.hyde.btn-group {
+  text-align: center;
+}

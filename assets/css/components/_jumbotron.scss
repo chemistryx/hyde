@@ -1,64 +1,64 @@
 // Jumbotron
 
 .hyde.jumbotron {
-    color: white;
-    background: linear-gradient(45deg, $blue 35%, $purple 100%);
-    padding: 2rem 0 1.875rem 0;
+  color: white;
+  background: linear-gradient(45deg, $blue 35%, $purple 100%);
+  padding: 2rem 0 1.875rem 0;
 
-    h1 {
-        font-size: 3rem;
-        margin: 6rem 0 0 0;
-        animation: fade-slide-up 0.5s both;
+  h1 {
+    font-size: 3rem;
+    margin: 6rem 0 0 0;
+    animation: fade-slide-up 0.5s both;
+  }
+
+  h2 {
+    font-weight: 350;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    animation: fade-slide-up 0.5s 0.1s both;
+  }
+
+  .hyde.main-desc {
+    font-size: 1.25rem;
+  }
+
+  .hyde.post-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-family: "Noto Sans Korean", sans-serif;
+    font-size: 0.875rem;
+
+    @media (max-width: $tablet) {
+      font-size: 0.75rem;
     }
 
-    h2 {
+    .hyde.post-info {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        display: block;
+        border-radius: 2rem;
+        margin-right: 0.75rem;
+        background: $gray300;
+      }
+
+      .hyde.post-author {
+        font-weight: 500;
+      }
+
+      .hyde.post-date {
         font-weight: 350;
-        font-size: 1rem;
-        letter-spacing: -0.5px;
-        animation: fade-slide-up 0.5s 0.1s both;
+      }
     }
 
-    .hyde.main-desc {
-        font-size: 1.25rem;
+    .hyde.post-back {
+      color: white;
+      font-weight: 600;
     }
-
-    .hyde.post-desc {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 1rem;
-        font-family: "Noto Sans Korean", sans-serif;
-        font-size: 0.875rem;
-
-        @media (max-width: $tablet) {
-            font-size: 0.75rem;
-        }
-
-        .hyde.post-info {
-            display: flex;
-            align-items: center;
-
-            img {
-                width: 2rem;
-                height: 2rem;
-                display: block;
-                border-radius: 2rem;
-                margin-right: 0.75rem;
-                background: $gray300;
-            }
-
-            .hyde.post-author {
-                font-weight: 500;
-            }
-
-            .hyde.post-date {
-                font-weight: 350;
-            }
-        }
-
-        .hyde.post-back {
-            color: white;
-            font-weight: 600;
-        }
-    }
+  }
 }
