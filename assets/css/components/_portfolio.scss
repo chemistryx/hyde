@@ -1,0 +1,52 @@
+// Portfolio
+
+.hyde.portfolio {
+  margin: 4rem 0;
+
+  .hyde.portfolio-item-wrapper {
+    padding: 0 1rem 1rem 0;
+
+    .hyde.portfolio-item {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      background-color: $black;
+      cursor: pointer;
+
+      &:hover {
+        .hyde.thumbnail {
+          transform: scale(1.05) translateZ(0);
+          opacity: 1;
+        }
+      }
+
+      .hyde.thumbnail {
+        height: 16rem;
+        opacity: 0.8;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .hyde.portfolio-overlay {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 1.5rem;
+        background: linear-gradient(to top, $black 20%, transparent);
+        font-family: "Noto Sans Korean", sans-serif;
+
+        h4 {
+          margin: 0.75rem 0;
+        }
+
+        span {
+          font-size: 0.875rem;
+          color: $gray200;
+          font-weight: 400;
+          letter-spacing: -0.25px;
+        }
+      }
+    }
+  }
+}

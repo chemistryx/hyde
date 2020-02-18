@@ -5,4 +5,23 @@ permalink: portfolio
 visible: true
 ---
 
-<div class="hyde portfolio"></div>
+{% if site.data.portfolio %}
+<div class="hyde portfolio row">
+  {% for item in site.data.portfolio reversed %}
+  <div class="hyde portfolio-item-wrapper col-lg-3 col-md-6 col-sm-12">
+    <div class="hyde portfolio-item">
+      <div class="hyde thumbnail" style="background: url('{{ item.image }}') 50% 50% no-repeat;"></div>
+      <div class="hyde portfolio-overlay">
+        <h4>{{ item.title }}</h4>
+        <span>{{ item.description }}</span>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else%}
+<div class="hyde empty">
+  <img src="/assets/images/waldo.png" />
+  <p>게시물이 없습니다.</p>
+</div>
+{% endif %}

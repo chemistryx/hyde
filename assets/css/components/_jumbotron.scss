@@ -63,6 +63,11 @@
     .hyde.post-back {
       color: white;
       font-weight: 600;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: $gray300;
+      }
     }
   }
 }
