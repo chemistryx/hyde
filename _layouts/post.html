@@ -8,10 +8,10 @@ layout: default
     <a class="hyde share-item copy" data-clipboard-text="{{ site.url }}{{ page.url }}">
       <i class="fas fa-link"></i>
     </a>
-    <a class="hyde share-item" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url}}{{ page.url }}" target="_blank">
+    <a class="hyde share-item" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url}}{{ page.url }}">
       <i class="fab fa-twitter"></i>
     </a>
-    <a class="hyde share-item" href="https://facebook.com/sharer.php?u={{ site.url}}{{ page.url }}" target="_blank">
+    <a class="hyde share-item" href="https://facebook.com/sharer.php?u={{ site.url}}{{ page.url }}">
       <i class="fab fa-facebook-square"></i>
     </a>
   </div>
@@ -33,15 +33,4 @@ layout: default
     {% include comment.html %}
   </div>
   {% endif %}
-  <script>
-    var clipboard = new ClipboardJS(".hyde.share-item.copy");
-
-    clipboard.on("success", function() {
-      alert("클립보드에 복사되었습니다.");
-    });
-
-    clipboard.on("error", function(e) {
-      console.log(e);
-    });
-  </script>
 </div>

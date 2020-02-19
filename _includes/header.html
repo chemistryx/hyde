@@ -1,10 +1,16 @@
 <div class="hyde jumbotron">
   <div class="hyde container">
     <h1>{{ page.title }}</h1>
-    {% unless page.layout == "post" %}
+    {% if page.layout == "default" %}
     <h2>{{ page.description }}</h2>
+    {% elsif page.layout == "project" %}
+    <h2>{{ page.description }}</h2>
+    <div class="hyde post-desc reverse">
+      <a class="hyde post-back" href="/projects"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
+    </div>
     {% else %} {% assign author = site.data.authors | where: 'name', page.author | first %} {% include tags.html %}
     <div class="hyde post-desc">
+      {% if page.layout == "post" or page.layout == "project" %}
       <div class="hyde post-info">
         {% if author.image %}
         <img src="{{ author.image }}" />
@@ -13,8 +19,9 @@
         <div class="hyde separator">∣</div>
         <span class="hyde post-date">{{ page.date | date: '%Y년 %-m월 %-d일' }}</span>
       </div>
+      {% endif %}
       <a class="hyde post-back" href="/blog"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
     </div>
-    {% endunless %}
+    {% endif %}
   </div>
 </div>

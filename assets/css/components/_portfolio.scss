@@ -25,6 +25,8 @@
       .hyde.thumbnail {
         height: 16rem;
         opacity: 0.8;
+        background-size: cover;
+        background-position: 50% 50%;
         transition: transform 0.3s ease, opacity 0.3s ease;
       }
 
@@ -36,7 +38,7 @@
         background: linear-gradient(to top, $black 20%, transparent);
         font-family: "Noto Sans Korean", sans-serif;
 
-        h4 {
+        h3 {
           margin: 0.75rem 0;
         }
 

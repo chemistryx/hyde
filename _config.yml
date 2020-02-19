@@ -6,7 +6,6 @@ url: "https://staging.chemistryx.me"
 github: ChemistryX
 email: starpiung@naver.com
 
-include: ["_pages"]
 exclude: [README.md, Gemfile, Gemfile.lock]
 
 comment:
@@ -14,6 +13,12 @@ comment:
   repo: ChemistryX/hyde-comments
   issue-term: pathname
   theme: github-light
+
+collections:
+  pages:
+    output: true
+  projects:
+    output: true
 
 defaults:
   - scope:
@@ -25,3 +30,8 @@ defaults:
     values:
       layout: post
       permalink: /blog/:title
+  - scope:
+      type: projects
+    values:
+      layout: project
+      permalink: /projects/:title

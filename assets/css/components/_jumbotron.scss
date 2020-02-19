@@ -34,6 +34,10 @@
     font-family: "Noto Sans Korean", sans-serif;
     font-size: 0.875rem;
 
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
     @media (max-width: $small) {
       font-size: 0.75rem;
     }

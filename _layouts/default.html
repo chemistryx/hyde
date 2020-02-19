@@ -15,14 +15,5 @@
       {% else %} {{ content }} {% endunless %}
     </section>
     {% include footer.html %}
-    <script>
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 10) {
-          $(".hyde.navbar-parent").addClass("navbar-bg");
-        } else {
-          $(".hyde.navbar-parent").removeClass("navbar-bg");
-        }
-      });
-    </script>
   </body>
 </html>

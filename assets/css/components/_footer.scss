@@ -10,10 +10,12 @@
     justify-content: space-between;
 
     .hyde.footer-left {
+      flex: 1 0;
       text-align: left;
     }
 
     .hyde.footer-right {
+      flex: 1 0;
       text-align: right;
       place-self: flex-end;
     }
@@ -79,11 +81,15 @@
         font-size: 0.7rem;
       }
 
-      .fa-heart {
-        transition: color 0.5s ease;
+      a {
+        color: $gray300;
 
-        &:hover {
-          color: $red;
+        .fa-meteor {
+          transition: color 0.5s ease;
+
+          &:hover {
+            color: $red;
+          }
         }
       }
     }

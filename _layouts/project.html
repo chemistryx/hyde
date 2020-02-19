@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="hyde content">
+  {% if page.image %}
+  <img src="/assets/images/projects/{{ page.image }}" />
+  {% endif %} {% if page.youtube %}
+  <div class="youtube" id="{{ page.youtube }}"></div>
+  {% endif %} {{ content }}
+</div>

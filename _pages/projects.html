@@ -1,0 +1,31 @@
+---
+title: Projects
+description: 지금까지 작업했던 프로젝트를 모아놓은 곳입니다.
+permalink: projects
+visible: true
+---
+
+<div class="hyde posts">
+  {% assign sorted = site.projects | sort: 'date' | reverse %} {% for project in sorted %}
+  <div class="hyde post{% unless forloop.last %} divider{% endunless %}">
+    <a href="{{ project.url }}">
+      <div class="hyde post-thumbnail-wrapper">
+        {% if project.image %}
+        <div class="hyde post-thumbnail" style="background-image: url('/assets/images/projects/{{ project.image }}');"></div>
+        {% else %}
+        <div
+          class="hyde post-thumbnail"
+          style="background-image: url('{{ project.youtube | prepend: 'https://img.youtube.com/vi/' }}/maxresdefault.jpg')"
+        ></div>
+        {% endif %}
+      </div>
+    </a>
+    <a href="{{ project.url }}">
+      <h2 class="hyde post-title">{{ project.title }}</h2>
+    </a>
+    <div class="hyde post-trail">
+      <span class="hyde post-date">{{ project.date | date: '%Y년 %-m월 %-d일' }}</span>
+    </div>
+  </div>
+  {% else %} {% include empty.html %} {% endfor %}
+</div>

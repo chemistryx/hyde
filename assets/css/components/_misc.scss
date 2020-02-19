@@ -53,3 +53,20 @@ hr {
   font-weight: 500;
   font-size: 1.25rem;
 }
+
+.youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 2em;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
