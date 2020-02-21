@@ -6,22 +6,5 @@ visible: true
 ---
 
 <div class="hyde posts">
-  {% for post in site.posts %}
-  <div class="hyde post{% unless forloop.last %} divider{% endunless %}">
-    <div class="hyde post-author-wrapper">
-      {% assign author = site.data.authors | where: 'name', post.author | first %} {% if author.image %}
-      <img src="{{ author.image }}" />
-      {% endif %}
-      <span class="hyde post-author">{% if author.name %}{{ author.name }}{% else %}unknown{% endif %}</span>
-    </div>
-    <a href="{{ post.url }}">
-      <h2 class="hyde post-title">{{ post.title }}</h2>
-    </a>
-    <p class="hyde post-preview">{{ post.content | strip_html | truncate: 200 }}</p>
-    {% include tags.html %}
-    <div class="hyde post-trail">
-      <span class="hyde post-date">{{ post.date | date: '%Y년 %-m월 %-d일' }}</span>
-    </div>
-  </div>
-  {% else %} {% include empty.html %} {% endfor %}
+  {% for post in site.posts %} {% include post.html %} {% else %} {% include empty.html %} {% endfor %}
 </div>

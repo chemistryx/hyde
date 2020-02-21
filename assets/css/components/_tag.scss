@@ -4,6 +4,25 @@
   display: inline-flex;
   flex-wrap: wrap;
 
+  .hyde.tag-wrapper {
+    margin-bottom: 1rem;
+
+    .hyde.tag {
+      display: inline-flex;
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  &.skills {
+    a {
+      font-size: 1rem !important;
+    }
+  }
+
   .hyde.tag {
     background-color: $gray450;
     border-radius: 1.5rem;
@@ -15,10 +34,6 @@
 
     @media (max-width: $small) {
       font-size: 0.75rem;
-    }
-
-    &.skills {
-      font-size: 1rem;
     }
 
     &:hover {

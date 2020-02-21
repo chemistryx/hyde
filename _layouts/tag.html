@@ -1,0 +1,7 @@
+---
+layout: default
+---
+
+<div class="hyde posts">
+  {% for post in site.posts %} {% assign tags = post.tags %} {% if tags contains page.identifier %} {% include post.html %} {% endif %} {% endfor %}
+</div>

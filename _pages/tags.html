@@ -1,0 +1,17 @@
+---
+title: Tags
+description: 태그 목록을 표시합니다.
+permalink: tags
+visible: false
+---
+
+<div class="hyde content">
+  <div class="hyde tags">
+    {% for tag in site.tags %}
+    <div class="hyde tag-wrapper col-lg-4 col-md-6 col-sm-12">
+      <a class="hyde tag" href="/tags/{{ tag.identifier }}">{{ tag.title }}</a>
+      <p>{% if tag.description %}{{ tag.description }}{% else %}설명이 없습니다.{% endif %}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

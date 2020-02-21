@@ -19,6 +19,8 @@ collections:
     output: true
   projects:
     output: true
+  tags:
+    output: true
 
 defaults:
   - scope:
@@ -35,3 +37,8 @@ defaults:
     values:
       layout: project
       permalink: /projects/:title
+  - scope:
+      type: tags
+    values:
+      layout: tag
+      permalink: /tags/:title

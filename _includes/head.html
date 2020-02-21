@@ -4,6 +4,7 @@
   <meta name="keywords" content="chemistryx,blog,portfolio,frontend,ui/ux, design" />
   <meta name="description" content="{{ site.description }}" />
   <meta name="author" content="ChemistryX" />
+  <meta name="theme-color" content="#4568f0" />
 
   <meta property="og:type" content="website" />
   <meta property="og:description" content='{% if page.url == "/" %}{{ site.description }}{% else %}{{ page.description }}{% endif %}' />
@@ -19,5 +20,5 @@
   <script src="https://kit.fontawesome.com/e9e8beb1d5.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
   <script src="/assets/js/hyde.js"></script>
-  <title>{% unless page.url == "/" %}{{ page.title }} | {% endunless %} ChemistryX</title>
+  <title>{% unless page.url == "/" %}{% if page.layout == "tag" %}#{% endif %}{{ page.title }} | {% endunless %} ChemistryX</title>
 </head>

@@ -1,12 +1,12 @@
 ---
 title: 블로그 개편
-tags: [Jekyll, Github Pages]
+tags: [jekyll, github-pages]
 author: 케미스트리
 ---
 
 새해를 맞아 블로그를 개편하였습니다.
 
-개편된 블로그도 이전과 마찬가지로 [Jekyll](https://jekyllrb.com/)과 [Github Pages](https://pages.github.com/)로 만들어졌습니다. 하지만 이전에 비해 많은 발전이 있었는데요,
+개편된 블로그도 이전과 마찬가지로 [Jekyll](https://jekyllrb.com/)과 [GitHub Pages](https://pages.github.com/)로 만들어졌습니다. 하지만 이전에 비해 많은 발전이 있었는데요,
 이제 개선된 부분을 알아볼까요?
 
 ## 🌈 SCSS
@@ -33,4 +33,4 @@ _기존 웹사이트의 모습_
 
 기존 웹사이트의 경우 비공개 저장소에서 관리되었지만 **Hyde**의 경우 이제 공개 저장소에서 관리됩니다. [라이선스](https://github.com/ChemistryX/hyde/blob/master/LICENSE)만 준수해 주신다면 누구나 자유롭게 사용하실 수 있습니다.
 
-**Hyde** Github 저장소: <https://github.com/ChemistryX/hyde>
+**Hyde** GitHub 저장소: <https://github.com/ChemistryX/hyde>

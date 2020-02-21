@@ -19,7 +19,7 @@
         background-color: $black !important;
       }
 
-      &:hover,
+      &:not(:first-child):hover,
       &.active {
         a {
           color: white !important;

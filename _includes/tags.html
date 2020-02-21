@@ -1,5 +1,6 @@
+{% if post %} {% assign tags = post.tags %} {% else %} {% assign tags = page.tags %} {% endif %}
 <div class="hyde tags{% unless post %} header-tags{% endunless %}">
-  {% if post %} {% assign tags = post.tags %} {% else %} {% assign tags = page.tags %} {% endif %} {% for tag in tags %}
-  <a class="hyde tag" href="/tags/{{ tag | slugify }}">{{ tag }}</a>
-  {% endfor %}
+  {% for site_tag in site.tags %} {% for tag in tags %} {% if site_tag.identifier == tag %}
+  <a class="hyde tag" href="/tags/{{ site_tag.identifier }}">{{ site_tag.title }}</a>
+  {% endif %} {% endfor %} {% endfor %}
 </div>

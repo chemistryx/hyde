@@ -13,4 +13,4 @@ Ruby를 통해 제작되었으며 AWS Lambda에서 서비스되고 있습니다.
 
 API 주소: <https://api.chemistryx.me/neis>
 
-API 사용법 및 Github 저장소: <https://github.com/ChemistryX/neis-api>
+API 사용법 및 GitHub 저장소: <https://github.com/ChemistryX/neis-api>
