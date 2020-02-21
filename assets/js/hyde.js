@@ -36,7 +36,7 @@ $(function() {
   });
 
   // Auto-add responsive Youtube iframe
-  $(".youtube").each(function() {
+  $(".hyde.youtube").each(function() {
     return $(this).append('<iframe src="https://www.youtube.com/embed/' + this.id + '" frameborder="0" allowfullscreen></iframe>');
   });
 });

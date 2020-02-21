@@ -54,7 +54,7 @@ hr {
   font-size: 1.25rem;
 }
 
-.youtube {
+.hyde.youtube {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -72,6 +72,46 @@ hr {
 }
 
 // fallback font
-.symbol {
+.hyde.symbol {
   font-family: "Noto Sans Korean", sans-serif;
+}
+
+.hyde.divider {
+  border-bottom: 1px solid $gray400;
+}
+
+.hyde.career-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .hyde.career {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+
+    .hyde.career-place {
+      font-weight: 700;
+    }
+
+    .hyde.career-desc {
+      font-size: 1rem;
+
+      p {
+        margin: 0;
+      }
+
+      .hyde.career-role {
+        font-weight: 500;
+      }
+
+      .hyde.career-duration {
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: $gray;
+      }
+    }
+  }
 }

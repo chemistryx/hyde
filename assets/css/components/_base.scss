@@ -31,6 +31,8 @@ img {
 
 .hyde.main {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .hyde.footer {
@@ -45,7 +47,13 @@ img {
   line-height: 1.75;
   letter-spacing: -0.02rem;
   color: $black;
-  word-break: break-all;
+  word-break: keep-all;
+
+  &.about {
+    h2 {
+      margin-top: 3rem;
+    }
+  }
 
   @media (max-width: $small) {
     font-size: 1.05rem;

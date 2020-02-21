@@ -6,11 +6,7 @@
     <section class="hyde main">
       {% unless page.url == "/" %} {% include header.html %}
       <div class="hyde container">
-        {% if page.url == "/about" %}
-        <div class="hyde content">
-          {{ content }}
-        </div>
-        {% else %} {{ content }} {% endif %}
+        {{ content }}
       </div>
       {% else %} {{ content }} {% endunless %}
     </section>

@@ -1,17 +1,7 @@
 <div class="hyde jumbotron">
   <div class="hyde container">
-    <h1>{% if page.layout == "tag" %}<span class="symbol">#</span>{% endif %}{{ page.title }}</h1>
-    {% if page.layout == "default" %}
-    <h2>{{ page.description }}</h2>
-    {% elsif page.layout == "project" or page.layout == "tag" %} {% if page.layout == "tag" %}
-    <h2><b>{{ page.title }}</b>에 해당하는 게시물을 표시합니다.</h2>
-    {% else %}
-    <h2>{{ page.description }}</h2>
-    {% endif %}
-    <div class="hyde post-desc reverse">
-      <a class="hyde post-back" href="/{{ page.url | split: '/' | shift | first }}"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
-    </div>
-    {% else %} {% assign author = site.data.authors | where: 'name', page.author | first %} {% include tags.html %}
+    <h1>{% if page.layout == "tag" %}<span class="hyde symbol">#</span>{% endif %}{{ page.title }}</h1>
+    {% if page.layout == "post" %} {% assign author = site.data.authors | where: 'name', page.author | first %} {% include tags.html %}
     <div class="hyde post-desc">
       {% if page.layout == "post" or page.layout == "project" %}
       <div class="hyde post-info">
@@ -25,6 +15,12 @@
       {% endif %}
       <a class="hyde post-back" href="/blog"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
     </div>
-    {% endif %}
+    {% else %}
+    <h2>{{ page.description }}</h2>
+    {% if page.layout == "tag" %}
+    <div class="hyde post-desc reverse">
+      <a class="hyde post-back" href="/{{ page.url | split: '/' | shift | first }}"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
+    </div>
+    {% endif %} {% endif %}
   </div>
 </div>
