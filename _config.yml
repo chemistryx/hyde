@@ -5,6 +5,7 @@ description: >-
 url: "https://staging.chemistryx.me"
 github: ChemistryX
 email: starpiung@naver.com
+google_analytics: UA-146771648-1
 
 exclude: [README.md, Gemfile, Gemfile.lock]
 
