@@ -7,15 +7,20 @@ visible: true
 
 {% if site.data.portfolio %}
 <div class="hyde portfolio row">
-  {% for item in site.data.portfolio reversed %}
+  {% for item in site.data.portfolio reversed %} {% assign identifier = item.image | split: "." | first %}
   <div class="hyde portfolio-item-wrapper col-lg-4 col-md-6 col-sm-12">
     <div class="hyde portfolio-item">
-      <div class="hyde thumbnail" style="background-image: url('/assets/images/portfolio/{{ item.image }}');"></div>
-      <div class="hyde portfolio-overlay">
-        <h3>{{ item.title }}</h3>
-        <span>{{ item.description }}</span>
-      </div>
+      <a href="#{{ identifier }}">
+        <div class="hyde thumbnail" style="background-image: url('/assets/images/portfolio/{{ item.image }}');"></div>
+        <div class="hyde portfolio-overlay">
+          <h3>{{ item.title }}</h3>
+          <span>{{ item.description }}</span>
+        </div>
+      </a>
     </div>
+  </div>
+  <div id="{{ identifier }}" class="hyde lightbox" onclick="history.back()">
+    <img src="/assets/images/portfolio/{{ item.image }}" onclick="event.stopPropagation()" />
   </div>
   {% endfor %}
 </div>

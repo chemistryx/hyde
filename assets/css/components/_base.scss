@@ -49,6 +49,10 @@ img {
   color: $black;
   word-break: keep-all;
 
+  a {
+    word-break: break-all;
+  }
+
   &.about {
     h2 {
       margin-top: 3rem;
