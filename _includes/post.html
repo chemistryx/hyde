@@ -1,7 +1,7 @@
 <div class="hyde post{% unless forloop.last %} divider{% endunless %}">
   <div class="hyde post-author-wrapper">
     {% assign author = site.data.authors | where: 'name', post.author | first %} {% if author.image %}
-    <img src="{{ author.image }}" />
+    <img src="{{ author.image }}" alt="author-profile" />
     {% endif %}
     <span class="hyde post-author">{% if author.name %}{{ author.name }}{% else %}unknown{% endif %}</span>
   </div>

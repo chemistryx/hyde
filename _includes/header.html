@@ -6,7 +6,7 @@
       {% if page.layout == "post" or page.layout == "project" %}
       <div class="hyde post-info">
         {% if author.image %}
-        <img src="{{ author.image }}" />
+        <img src="{{ author.image }}" alt="author-profile" />
         {% endif %}
         <span class="hyde post-author">{% if author.name %}{{ author.name }}{% else %}unknown{% endif %}</span>
         <div class="hyde separator">∣</div>

@@ -20,13 +20,13 @@ visible: true
     </div>
   </div>
   <div id="{{ identifier }}" class="hyde lightbox" onclick="history.back()">
-    <img src="/assets/images/portfolio/{{ item.image }}" onclick="event.stopPropagation()" />
+    <img src="/assets/images/portfolio/{{ item.image }}" alt="{{ item.image | split: '.' | first }}" onclick="event.stopPropagation()" />
   </div>
   {% endfor %}
 </div>
 {% else %}
 <div class="hyde empty">
-  <img src="/assets/images/waldo.png" />
+  <img src="/assets/images/waldo.png" alt="not_found" />
   <p>게시물이 없습니다.</p>
 </div>
 {% endif %}
