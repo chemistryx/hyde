@@ -8,6 +8,10 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
 
   <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="{% unless page.url == '/' %}{% if page.layout == 'tag' %}#{% endif %}{{ page.title }} | {% endunless %} ChemistryX"
+  />
   <meta property="og:description" content='{% if page.url == "/" %}{{ site.description }}{% else %}{{ page.description }}{% endif %}' />
   <meta property="og:image" content="/assets/images/bg.png" />
   <meta name="naver-site-verification" content="f70f862058dcc40f816c137c1a3a84a84078fb62" />
