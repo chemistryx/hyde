@@ -53,6 +53,27 @@ img {
     word-break: break-all;
   }
 
+  blockquote {
+    border-radius: 10px;
+    border-left: 7px solid $blue;
+    padding-left: 1rem;
+
+    p {
+      color: $black300;
+    }
+  }
+
+  pre.highlight {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  code.highlighter-rouge {
+    background-color: $gray400;
+    padding: 0.15rem 0.2rem;
+    border-radius: 5px;
+  }
+
   &.about {
     h2 {
       margin-top: 3rem;
@@ -70,7 +91,7 @@ img {
   img + em {
     display: block;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: $gray;
   }
 
