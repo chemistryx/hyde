@@ -11,7 +11,6 @@
     h1 {
       font-size: 3.5rem;
       margin: 8rem 0 0 0;
-      word-break: keep-all;
 
       @media (max-width: $small) {
         margin: 6rem 0 0 0;
@@ -28,6 +27,7 @@
   h1 {
     font-size: 3rem;
     margin: 6rem 0 0 0;
+    word-break: keep-all;
     animation: fade-slide-up 0.5s both;
 
     @media (max-width: $small) {

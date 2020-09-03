@@ -72,6 +72,7 @@ img {
     background-color: $gray400;
     padding: 0.15rem 0.2rem;
     border-radius: 5px;
+    word-break: break-word;
   }
 
   &.about {
@@ -86,6 +87,13 @@ img {
 
   img {
     margin: 1rem auto;
+
+    &.fix-scale {
+      @media (max-width: $extra-small) {
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 
   img + em {
