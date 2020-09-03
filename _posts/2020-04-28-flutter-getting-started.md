@@ -40,10 +40,9 @@ void main() {
 
 ### 🚀 성능 (vs React Native)
 
-![react-native-logic](/assets/images/posts/react-native-logic.png)
-_React Native_
-![flutter-logic](/assets/images/posts/flutter-logic.png)
-_Flutter_
+|                           _React Native_                           |                        _Flutter_                         |
+| :----------------------------------------------------------------: | :------------------------------------------------------: |
+| ![react-native-logic](/assets/images/posts/react-native-logic.png) | ![flutter-logic](/assets/images/posts/flutter-logic.png) |
 
 사진에서 볼 수 있듯이 React Native의 경우 OEM 위젯에 접근하기 위해 Bridge를 거쳐야 하는데 이 부분에서 성능 저하가 발생합니다. 반면 Flutter의 경우 별도의 Bridge를 거치지 않고 Dart에서 네이티브 코드로 컴파일 해주므로 성능 저하가 발생하지 않습니다.
 
