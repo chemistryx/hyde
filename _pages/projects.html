@@ -12,11 +12,13 @@ visible: true
       <div class="hyde post-thumbnail-wrapper">
         {% if project.image %}
         <div class="hyde post-thumbnail" style="background-image: url('/assets/images/projects/{{ project.image }}');"></div>
-        {% else %}
+        {% elsif project.youtube %}
         <div
           class="hyde post-thumbnail"
           style="background-image: url('{{ project.youtube | prepend: 'https://img.youtube.com/vi/' }}/maxresdefault.jpg')"
         ></div>
+        {% else %}
+        <div class="hyde post-thumbnail"></div>
         {% endif %}
       </div>
     </a>

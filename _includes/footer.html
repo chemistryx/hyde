@@ -9,7 +9,7 @@
           </li>
           {% endif %} {% endfor %}
         </ul>
-        <p class="text">&copy; {{ site.time | date: '%Y' }} ChemistryX</p>
+        <p class="text">&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
       </div>
       <div class="hyde footer-right">
         <ul class="hyde footer-menu social">
@@ -20,9 +20,11 @@
             <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
           </li>
         </ul>
+        <!-- DO NOT CHANGE THIS :: 수정하지 마세요 -->
         <p class="text">
           Made with <a href="https://github.com/ChemistryX/hyde"><i class="fas fa-meteor"></i> Hyde</a>
         </p>
+        <!-- DO NOT CHANGE THIS :: 수정하지 마세요 -->
       </div>
     </div>
   </div>

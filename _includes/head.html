@@ -1,16 +1,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="chemistryx,blog,portfolio,frontend,ui/ux, design" />
+  <meta name="keywords" content="{{ site.title }},blog,portfolio" />
   <meta name="description" content="{{ site.description }}" />
-  <meta name="author" content="ChemistryX" />
+  <meta name="author" content="{{ site.title }}" />
   <meta name="theme-color" content="#4568f0" />
   <meta name="msapplication-TileColor" content="#ffffff" />
 
   <meta property="og:type" content="website" />
   <meta
     property="og:title"
-    content="{% unless page.url == '/' %}{% if page.layout == 'tag' %}#{% endif %}{{ page.title }} | {% endunless %} ChemistryX"
+    content="{% unless page.url == '/' %}{% if page.layout == 'tag' %}#{% endif %}{{ page.title }} | {% endunless %} {{ site.title }}"
   />
   <meta property="og:description" content='{% if page.url == "/" %}{{ site.description }}{% else %}{{ page.description }}{% endif %}' />
   <meta property="og:image" content="/assets/images/bg.png" />
@@ -42,5 +42,5 @@
   <script src="https://kit.fontawesome.com/e9e8beb1d5.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
   <script src="/assets/js/hyde.js"></script>
-  <title>{% unless page.url == "/" %}{% if page.layout == "tag" %}#{% endif %}{{ page.title }} | {% endunless %} ChemistryX</title>
+  <title>{% unless page.url == "/" %}{% if page.layout == "tag" %}#{% endif %}{{ page.title }} | {% endunless %} {{ site.title }}</title>
 </head>

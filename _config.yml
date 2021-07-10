@@ -1,15 +1,15 @@
-title: ChemistryX
+title: Hyde
 description: >-
-  UI & UX Designer
-  Frontend Developer
+  Build your own portfolio <br>
+  with Hyde.
 url: "https://chemistryx.me"
 github: ChemistryX
-email: starpiung@naver.com
-google_analytics: UA-146771648-1
+email: changeme@chemistryx.me
+google_analytics: <YOUR UA TOKEN>
 
 exclude: [README.md, Gemfile, Gemfile.lock]
 
-comment:
+comments:
   enabled: true
   repo: ChemistryX/hyde-comments
   issue-term: pathname

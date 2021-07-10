@@ -1,12 +1,13 @@
 // Tag
 
 .hyde.tags {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
 
   .hyde.tag-wrapper {
     margin-bottom: 1rem;
-
+    overflow-wrap: break-word;
+    
     .hyde.tag {
       display: inline-flex;
       font-size: 1rem;
@@ -50,5 +51,5 @@
 
 .hyde.header-tags {
   margin-top: 0.5rem;
-  font-family: "Noto Sans Korean", sans-serif;
+  font-family: Pretendard, sans-serif;
 }

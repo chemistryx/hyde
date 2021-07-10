@@ -36,17 +36,18 @@
         bottom: 0;
         padding: 1.5rem;
         background: linear-gradient(to top, $black 20%, transparent);
-        font-family: "Noto Sans Korean", sans-serif;
+        font-family: Pretendard, sans-serif;
 
         h3 {
           color: white;
           margin: 0.75rem 0;
+          font-weight: 700;
         }
 
         span {
           font-size: 0.875rem;
           color: $gray200;
-          font-weight: 400;
+          font-weight: 500;
           letter-spacing: -0.25px;
         }
       }

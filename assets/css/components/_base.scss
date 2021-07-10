@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $blue;
+  color: $primary;
 }
 
 img {
@@ -41,8 +41,7 @@ img {
 
 .hyde.content {
   margin: 4rem auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Korean", "Malgun Gothic", "맑은 고딕",
-    sans-serif;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   font-size: 1.15rem;
   line-height: 1.75;
   letter-spacing: -0.02rem;
@@ -55,7 +54,7 @@ img {
 
   blockquote {
     border-radius: 10px;
-    border-left: 7px solid $blue;
+    border-left: 7px solid $primary;
     padding-left: 1rem;
 
     p {
@@ -111,6 +110,6 @@ img {
 }
 
 ::selection {
-  background: $blue;
+  background: $primary;
   color: white;
 }

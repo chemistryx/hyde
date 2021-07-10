@@ -16,12 +16,12 @@
 }
 
 .hyde.btn-blue {
-  color: $blue;
-  border: 1px solid $blue;
+  color: $primary;
+  border: 1px solid $primary;
 
   &:hover {
     color: white;
-    background-color: $blue;
+    background-color: $primary;
   }
 }
 
