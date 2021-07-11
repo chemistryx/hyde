@@ -1,4 +1,4 @@
-# [![header](https://raw.githubusercontent.com/ChemistryX/hyde/master/readme-banner.png)](https://chemistryx.me)
+# [![header](https://raw.githubusercontent.com/ChemistryX/hyde/master/readme-header.png)](https://chemistryx.me)
 
 # Hyde
 
