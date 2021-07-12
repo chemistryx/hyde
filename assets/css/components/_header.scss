@@ -6,4 +6,8 @@
   right: 0;
   left: 0;
   z-index: 999;
+
+  &.main {
+    position: absolute !important;
+  }
 }

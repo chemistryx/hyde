@@ -8,8 +8,9 @@ $(function() {
     $(".hyde.mobile-nav-wrapper").slideUp();
   });
 
-  // Navbar background
+  // Dynamic navbar background(except main)
   $(window).scroll(function() {
+    if ($(".hyde.navbar-parent").hasClass("main")) return;
     if ($(this).scrollTop() > 10) {
       $(".hyde.navbar-parent").addClass("navbar-bg");
     } else {

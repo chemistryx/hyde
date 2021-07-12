@@ -12,11 +12,12 @@
   height: 100%;
   top: 0;
   left: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, z-index 0.3s step-end;
 
   &:target {
     opacity: 1;
     z-index: 999;
+    transition: opacity 0.3s ease, z-index 0.3s step-start;
   }
 
   img {

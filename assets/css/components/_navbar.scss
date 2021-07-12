@@ -4,8 +4,9 @@
   transition: background-color 0.2s ease, color 0.2s ease;
 
   &.hyde.navbar-bg {
-    background-color: white;
-    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 10px -7.5px rgba(0, 0, 0, 0.7);
 
     .hyde.nav-toggler {
       a {
@@ -35,7 +36,7 @@
   .hyde.navbar {
     list-style: none;
     display: flex;
-    padding: 3rem 0;
+    padding: 2.25rem 0;
     margin: 0;
 
     .hyde.nav-toggler {
@@ -109,7 +110,7 @@
         left: 0;
         z-index: -1;
         bottom: 0;
-        transition: width 0.5s ease;
+        transition: width 0.4s ease;
         border-radius: 0 0 3px 3px;
       }
 
@@ -147,7 +148,7 @@
 
     .hyde.mobile-nav {
       margin: 0;
-      padding: 3rem 0;
+      padding: 2.25rem 0;
       list-style: none;
       display: flex;
       flex-direction: column;

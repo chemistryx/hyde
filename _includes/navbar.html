@@ -1,5 +1,5 @@
-<header class="hyde header">
-  <nav class="hyde navbar-parent">
+<header class="hyde header {% if page.url == "/" %}main{% endif %}">
+  <nav class="hyde navbar-parent {% if page.url == "/" %}main{% endif %}">
     {% assign pages = site.pages | sort:'url' %}
     <div class="hyde mobile-nav-wrapper">
       <div class="hyde container">
