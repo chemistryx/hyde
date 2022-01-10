@@ -7,11 +7,8 @@
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(3px);
     box-shadow: 0px 0px 10px -7.5px rgba(0, 0, 0, 0.7);
-
-    .hyde.nav-toggler {
-      a {
-        color: $dark !important;
-      }
+    a {
+      color: $dark !important;
     }
 
     .hyde.nav-item {
@@ -25,10 +22,6 @@
         a {
           color: white !important;
         }
-      }
-
-      a {
-        color: $dark !important;
       }
     }
   }
@@ -177,14 +170,14 @@
       .hyde.mobile-nav-item {
         font-size: 1.25rem;
         padding: 2rem 1rem;
-        color: white;
+        color: white !important;
         border-radius: 9px;
         transition: color 0.5s ease, background-color 0.5s ease;
 
         &:not(.close-btn):hover,
         &:not(.close-btn).active {
           background-color: white;
-          color: $dark;
+          color: $dark !important;
         }
       }
     }

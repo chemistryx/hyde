@@ -7,7 +7,19 @@
 
     .hyde.navbar-parent {
         &.hyde.navbar-bg {
-            background-color: rgba($color: $dark200, $alpha: 0.9) !important;
+          background-color: rgba($color: $dark200, $alpha: 0.9) !important;
+      
+          .hyde.nav-toggler {
+            a {
+              color: white !important;
+            }
+          }
+      
+          .hyde.nav-item {
+            a {
+              color: white !important;
+            }
+          }
         }
     }
 
