@@ -13,7 +13,6 @@ comments:
   enabled: true
   repo: ChemistryX/hyde-comments
   issue-term: pathname
-  theme: github-light
 
 collections:
   pages:
