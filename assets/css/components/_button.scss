@@ -15,9 +15,9 @@
   cursor: pointer;
 }
 
-.hyde.btn-blue {
+.hyde.btn-primary {
   color: $primary;
-  border: 1px solid $primary;
+  border: 2px solid $primary;
 
   &:hover {
     color: white;
@@ -27,10 +27,10 @@
 
 .hyde.btn-default {
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
 
   &:hover {
-    color: $black;
+    color: $dark;
     background-color: white;
   }
 }

@@ -45,6 +45,10 @@ hr {
     margin: 0 0.25rem;
     color: $gray200;
     cursor: pointer;
+
+    &:hover {
+      color: $gray300;
+    }
   }
 }
 

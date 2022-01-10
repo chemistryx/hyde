@@ -1,0 +1,72 @@
+// Dark
+
+@media(prefers-color-scheme: dark) {
+    body {
+        background: $dark;
+    }
+
+    .hyde.navbar-parent {
+        &.hyde.navbar-bg {
+            background-color: rgba($color: $dark200, $alpha: 0.9) !important;
+        }
+    }
+
+    .hyde.jumbotron {
+        color: $gray450 !important;
+        background: linear-gradient(45deg, rgba($color: $primary, $alpha: 0.2) 35%, rgba($color: $secondary, $alpha: 0.2) 100%) !important;
+    }
+
+    .hyde.content {
+        color: $gray400;
+
+        .hyde.share {
+            .hyde.share-item {
+                color: $dark300;
+
+                &:hover {
+                    color: $dark400;
+                }
+            }
+        }
+
+        .hyde.signature {
+            background-color: $dark200;
+        }
+    }
+
+    .hyde.post {
+        .hyde.post-thumbnail-wrapper {
+            background-color: $dark200 !important;
+
+            .hyde.post-thumbnail {
+                opacity: 0.4 !important;
+
+                &:hover {
+                    opacity: 0.6 !important;
+                  }
+            }
+        }
+
+        .hyde.post-title {
+            color: $gray450 !important;
+        }
+
+        .hyde.post-preview {
+            color: $gray300 !important;
+        }
+    }
+
+    .hyde.tags {
+        .hyde.tag {
+            background-color: $dark200 !important;
+        }
+    }
+
+    hr {
+        background-color: $dark200 !important;
+    }
+
+    .hyde.divider {
+        border-bottom: 1px solid $dark200 !important;
+    }
+}

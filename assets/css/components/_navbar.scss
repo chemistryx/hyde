@@ -10,14 +10,14 @@
 
     .hyde.nav-toggler {
       a {
-        color: $black !important;
+        color: $dark !important;
       }
     }
 
     .hyde.nav-item {
       &:before,
       &:after {
-        background-color: $black !important;
+        background-color: $dark !important;
       }
 
       &:not(:first-child):hover,
@@ -28,7 +28,7 @@
       }
 
       a {
-        color: $black !important;
+        color: $dark !important;
       }
     }
   }
@@ -124,7 +124,7 @@
       &:not(:first-child):hover,
       &:not(:first-child).active {
         a {
-          color: $black;
+          color: $dark;
         }
       }
 
@@ -137,7 +137,7 @@
   }
 
   .hyde.mobile-nav-wrapper {
-    background: linear-gradient(45deg, $black 45%, $black200 100%);
+    background: linear-gradient(45deg, $dark 45%, $dark200 100%);
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -184,7 +184,7 @@
         &:not(.close-btn):hover,
         &:not(.close-btn).active {
           background-color: white;
-          color: $black;
+          color: $dark;
         }
       }
     }
