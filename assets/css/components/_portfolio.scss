@@ -12,7 +12,7 @@
       color: white;
       border-radius: 5px;
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-      background-color: $black;
+      background-color: $dark;
       cursor: pointer;
 
       &:hover {
@@ -35,7 +35,7 @@
         width: 100%;
         bottom: 0;
         padding: 1.5rem;
-        background: linear-gradient(to top, $black 20%, transparent);
+        background: linear-gradient(to top, $dark 20%, transparent);
         font-family: Pretendard, sans-serif;
 
         h3 {

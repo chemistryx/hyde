@@ -2,7 +2,7 @@
 
 .hyde.footer-wrapper {
   color: white;
-  background: linear-gradient(45deg, $black 45%, $black200 100%);
+  background: linear-gradient(45deg, $dark200 45%, $dark300 100%);
   padding: 4rem 0;
 
   .hyde.footer {
@@ -54,7 +54,7 @@
           display: inline-block;
           width: 35px;
           height: 35px;
-          background-color: $black300;
+          background-color: $dark400;
           border-radius: 9px;
           line-height: 38px;
           margin-left: 14px;
@@ -63,7 +63,7 @@
           transition: color 0.5s ease, background-color 0.5s ease;
 
           &:hover {
-            color: $black;
+            color: $dark;
             background-color: white;
           }
         }

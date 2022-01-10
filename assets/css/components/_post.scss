@@ -14,7 +14,7 @@
     .hyde.hyde.post-thumbnail-wrapper {
       overflow: hidden;
       border-radius: 5px;
-      background-color: $black;
+      background-color: $dark;
 
       .hyde.post-thumbnail {
         height: 14rem;
@@ -51,7 +51,7 @@
       .hyde.post-author {
         font-size: 0.875rem;
         font-weight: 500;
-        color: $black;
+        color: $dark;
 
         @media (max-width: $small) {
           font-size: 0.75rem;
@@ -61,11 +61,12 @@
 
     .hyde.post-title {
       font-size: 1.5rem;
-      color: $black;
+      color: $dark;
       margin: 0.75rem 0 0 0;
     }
 
     .hyde.post-preview {
+      color: $dark;
       margin: 0.75rem 0;
       word-break: break-all;
 
