@@ -47,6 +47,10 @@
             }
         }
 
+        .hyde.post-author {
+            color: $gray450 !important;
+        }
+
         .hyde.post-title {
             color: $gray450 !important;
         }
@@ -55,6 +59,22 @@
             color: $gray300 !important;
         }
     }
+
+    .hyde.portfolio {
+        .hyde.portfolio-item-wrapper {
+          .hyde.portfolio-item {
+            &:hover {
+              .hyde.thumbnail {
+                opacity: 0.6 !important;
+              }
+            }
+      
+            .hyde.thumbnail {
+              opacity: 0.4 !important;
+            }
+          }
+        }
+      }
 
     .hyde.tags {
         .hyde.tag {
