@@ -44,6 +44,17 @@
         .hyde.signature {
             background-color: $dark200;
         }
+
+        blockquote {
+          p {
+            color: $gray300 !important;
+          }
+        }
+
+        code.highlighter-rouge {
+          background-color: $dark200 !important;
+          font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif !important;
+        }
     }
 
     .hyde.post {
