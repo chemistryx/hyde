@@ -112,4 +112,14 @@
     .hyde.divider {
         border-bottom: 1px solid $dark200 !important;
     }
+
+	.hyde.btn-default {
+		color: white;
+		border: 2px solid white;
+	
+		&:hover {
+			color: $dark;
+			background-color: white;
+		}
+	}
 }

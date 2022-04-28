@@ -25,7 +25,17 @@
   }
 }
 
-.hyde.btn-default {
+.hyde.btn-secondary {
+	color: $secondary;
+	border: 2px solid $secondary;
+
+	&:hover {
+		color: white;
+		background-color: $secondary;
+	}
+}
+
+.hyde.btn-light {
   color: white;
   border: 2px solid white;
 
@@ -33,6 +43,16 @@
     color: $dark;
     background-color: white;
   }
+}
+
+.hyde.btn-default {
+	color: $dark;
+	border: 2px solid $dark;
+
+	&:hover {
+		color: white;
+		background-color: $dark;
+	}
 }
 
 .hyde.btn-group {
