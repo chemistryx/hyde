@@ -19,7 +19,7 @@
     <h2>{{ page.description }}</h2>
     {% if page.layout == "tag" or page.layout == "project" %}
     <div class="hyde post-desc reverse">
-      <a class="hyde post-back" href="/{{ page.url | split: '/' | shift | first }}"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
+      <a class="hyde post-back" href="{{ site.baseurl }}/{{ page.url | split: '/' | shift | first }}"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
     </div>
     {% endif %} {% endif %}
   </div>

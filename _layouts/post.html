@@ -5,13 +5,13 @@ layout: default
 <div class="hyde content">
   {{ content }} {% assign author = site.data.authors | where: 'name', page.author | first %} {% if author %}
   <div class="hyde share">
-    <a class="hyde share-item copy" data-clipboard-text="{{ site.url }}{{ page.url }}">
+    <a class="hyde share-item copy" data-clipboard-text="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
       <i class="fas fa-link"></i>
     </a>
-    <a class="hyde share-item" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url}}{{ page.url }}">
+    <a class="hyde share-item" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url}}{{ site.baseurl }}{{ page.url }}">
       <i class="fab fa-twitter"></i>
     </a>
-    <a class="hyde share-item" href="https://facebook.com/sharer.php?u={{ site.url}}{{ page.url }}">
+    <a class="hyde share-item" href="https://facebook.com/sharer.php?u={{ site.url}}{{ site.baseurl }}{{ page.url }}">
       <i class="fab fa-facebook-square"></i>
     </a>
   </div>
