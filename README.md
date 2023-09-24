@@ -55,7 +55,7 @@ comments:
 
 `google_analytics`: [Google Analytics](https://analytics.google.com)에서 발급한 추적 ID를 입력해주세요.
 
-`comments`: 블로그 하단부에 노출되는 댓글 설정입니다. 댓글은 GitHub계정이 있어야 달 수 있습니다. 자세한건 [이곳](https://utteranc.es)을 참조하세요.
+`comments`: 블로그 하단부에 노출되는 댓글 설정입니다. 댓글은 GitHub 계정이 있어야 달 수 있습니다. 자세한 내용은 [이곳](https://utteranc.es)을 참조하세요.
 
 **2. 기타 부가적인 내용 수정**
 

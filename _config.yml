@@ -2,16 +2,16 @@ title: Hyde
 description: >-
   Build your own portfolio <br>
   with Hyde.
-url: "https://chemistryx.me"
+url: "https://chemistryx.github.io/hyde"
 github: ChemistryX
 email: changeme@chemistryx.me
-google_analytics: <YOUR UA TOKEN>
+google_analytics: "UA_TOKEN"
 
 exclude: [README.md, Gemfile, Gemfile.lock]
 
 comments:
   enabled: true
-  repo: ChemistryX/hyde-comments
+  repo: "REPO_COMMENTS_PATH"
   issue-term: pathname
 
 collections:
