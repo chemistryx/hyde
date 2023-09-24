@@ -5,11 +5,11 @@
       <div class="hyde container">
         <ul class="hyde mobile-nav">
           <div class="hyde mobile-nav-row">
-            <a class="hyde mobile-nav-item logo" href="/"><i class="fas fa-meteor"></i> {{ site.title }}</a>
+            <a class="hyde mobile-nav-item logo" href="{{ site.baseurl }}"><i class="fas fa-meteor"></i> {{ site.title }}</a>
             <a class="hyde mobile-nav-item close-btn"><i class="fas fa-times"></i></a>
           </div>
           {% for p in pages %} {% if p.visible == true %} {% assign url = page.url | split: '/' %}
-          <a class="hyde mobile-nav-item{% if p.url contains url[1] %} active {% endif %}" href="{{ site.baseurl }}/{{ p.url }}">{{ p.title }}</a>
+          <a class="hyde mobile-nav-item{% if p.url contains url[1] %} active {% endif %}" href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
           {% endif %} {% endfor %}
         </ul>
       </div>
@@ -17,14 +17,14 @@
     <div class="hyde container">
       <ul class="hyde navbar">
         <li class="hyde nav-item">
-          <a class="hyde nav-logo" href="/"><i class="fas fa-meteor"></i> {{ site.title }}</a>
+          <a class="hyde nav-logo" href="{{ site.baseurl }}"><i class="fas fa-meteor"></i> {{ site.title }}</a>
         </li>
         <li class="hyde nav-toggler">
           <a class="hyde nav-toggle-btn"><i class="fas fa-bars"></i></a>
         </li>
         {% for p in pages %} {% if p.visible == true %} {% assign url = page.url | split: '/' %}
         <li class="hyde nav-item{% if p.url contains url[1] %} active {% endif %}">
-          <a href="{{ site.baseurl }}/{{ p.url }}">{{ p.title }}</a>
+          <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
         </li>
         {% endif %} {% endfor %}
       </ul>
