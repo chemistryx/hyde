@@ -18,7 +18,7 @@ layout: null
         <div id="content">
           <h1>XML Sitemap</h1>
           <p>This is a generated
-            <a href="{{ site.url }}/{{ site.baseurl }}sitemap.xml">sitemap</a>
+            <a href="{{ site.url }}{{ site.baseurl }}sitemap.xml">sitemap</a>
             for robot, orcs or elves.
           </p>
           <p>You might to visit a

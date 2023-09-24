@@ -11,7 +11,7 @@ visible: true
   <div class="hyde portfolio-item-wrapper col-lg-4 col-md-6 col-sm-12">
     <div class="hyde portfolio-item">
       <a href="#{{ identifier }}">
-        <div class="hyde thumbnail" style="background-image: url('./assets/images/portfolio/{{ item.image }}');"></div>
+        <div class="hyde thumbnail" style="background-image: url('{{ site.baseurl }}/assets/images/portfolio/{{ item.image }}');"></div>
         <div class="hyde portfolio-overlay">
           <h3>{{ item.title }}</h3>
           <span>{{ item.description }}</span>
@@ -20,13 +20,13 @@ visible: true
     </div>
   </div>
   <div id="{{ identifier }}" class="hyde lightbox" onclick="history.back()">
-    <img src="./assets/images/portfolio/{{ item.image }}" alt="{{ item.image | split: '.' | first }}" onclick="event.stopPropagation()" />
+    <img src="{{ site.baseurl }}/assets/images/portfolio/{{ item.image }}" alt="{{ item.image | split: '.' | first }}" onclick="event.stopPropagation()" />
   </div>
   {% endfor %}
 </div>
 {% else %}
 <div class="hyde empty">
-  <img src="./assets/images/waldo.png" alt="not_found" />
+  <img src="{{ site.baseurl }}/assets/images/waldo.png" alt="not_found" />
   <p>게시물이 없습니다.</p>
 </div>
 {% endif %}

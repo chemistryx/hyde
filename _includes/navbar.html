@@ -9,7 +9,7 @@
             <a class="hyde mobile-nav-item close-btn"><i class="fas fa-times"></i></a>
           </div>
           {% for p in pages %} {% if p.visible == true %} {% assign url = page.url | split: '/' %}
-          <a class="hyde mobile-nav-item{% if p.url contains url[1] %} active {% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+          <a class="hyde mobile-nav-item{% if p.url contains url[1] %} active {% endif %}" href="{{ site.baseurl }}/{{ p.url }}">{{ p.title }}</a>
           {% endif %} {% endfor %}
         </ul>
       </div>

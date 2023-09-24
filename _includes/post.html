@@ -5,7 +5,7 @@
     {% endif %}
     <span class="hyde post-author">{% if author.name %}{{ author.name }}{% else %}unknown{% endif %}</span>
   </div>
-  <a href="{{ post.url }}">
+  <a href="{{ site.baseurl }}/{{ post.url }}">
     <h2 class="hyde post-title">{{ post.title }}</h2>
   </a>
   <p class="hyde post-preview">{{ post.content | strip_html | truncate: 200 }}</p>
