@@ -9,7 +9,7 @@ visible: false
   <div class="hyde tags">
     {% for tag in site.tags %}
     <div class="hyde tag-wrapper col-lg-4 col-md-6 col-sm-12">
-      <a class="hyde tag" href="/tags/{{ tag.identifier }}">{{ tag.title }}</a>
+      <a class="hyde tag" href="{{ site.baseurl }}/tags/{{ tag.identifier }}">{{ tag.title }}</a>
       <p class="hyde tag-desc">{% if tag.description %}{{ tag.description }}{% else %}설명이 없습니다.{% endif %}</p>
       <!-- TODO: add feature -->
       <p class="hyde tag-count">{{ site.posts | where_exp: 'post', 'post.tags contains tag.identifier' | size }}개의 게시물</p>
