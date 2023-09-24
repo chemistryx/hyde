@@ -5,7 +5,7 @@
         <ul class="hyde footer-menu links">
           {% assign pages = site.pages | sort:'url' %} {% for p in pages %} {% if p.visible == true %}
           <li>
-            <a href="{{ p.url }}">{{ p.title }}</a>
+            <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
           </li>
           {% endif %} {% endfor %}
         </ul>

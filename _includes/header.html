@@ -6,14 +6,14 @@
       {% if page.layout == "post" or page.layout == "project" %}
       <div class="hyde post-info">
         {% if author.image %}
-        <img src="./{{ site.baseurl }}{{ author.image }}" alt="author-profile" />
+        <img src="{{ site.baseurl }}/{{ author.image }}" alt="author-profile" />
         {% endif %}
         <span class="hyde post-author">{% if author.name %}{{ author.name }}{% else %}unknown{% endif %}</span>
         <div class="hyde separator">∣</div>
         <span class="hyde post-date">{{ page.date | date: '%Y년 %-m월 %-d일' }}</span>
       </div>
       {% endif %}
-      <a class="hyde post-back" href="./{{ site.baseurl }}blog"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
+      <a class="hyde post-back" href="{{ site.baseurl }}/blog"><i class="fas fa-chevron-left"></i> 목록으로 돌아가기</a>
     </div>
     {% else %}
     <h2>{{ page.description }}</h2>
