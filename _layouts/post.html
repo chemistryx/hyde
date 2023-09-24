@@ -17,7 +17,7 @@ layout: default
   </div>
   <div class="hyde signature">
     {% if author.image %}
-    <img src="{{ author.image }}" alt="author-profile" />
+    <img src="./{{ site.baseurl }}{{ author.image }}" alt="author-profile" />
     {% endif %}
     <div class="hyde signature-text">
       <div class="hyde signature-author">Written by <span>{% if author.name %}{{ author.name }}{% else %}unknown{% endif %}</span></div>
